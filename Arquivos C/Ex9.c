@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main()
+void main()
 {
 float hora_aula, desconto, salario_liquido;
 int aulas;

@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main()
+void main()
 {
 float valor_produto, desconto, reajuste;
 

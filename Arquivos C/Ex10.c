@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main(){
+void main(){
 float preco_fabrica, perc_distribuidor, perc_impostos, preco_final, lucro_distribuidor, impostos;
 
 printf("Digite o preco de fabrica do produto: ");

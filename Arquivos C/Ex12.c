@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main(){
+void main(){
 float salario_inicial, salario_reajuste;
 
 printf("Digite o salario do funcionario: ");

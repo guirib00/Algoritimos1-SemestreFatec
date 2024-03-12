@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main()
+void main()
 {
 float altura, peso_ideal;
 char sexo;

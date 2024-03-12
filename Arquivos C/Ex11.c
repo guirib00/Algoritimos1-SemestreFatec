@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main(){
+void main(){
 float valor_produto, valor_final;
 
 printf("Digite o valor do produto: ");

@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main(){
+void main(){
 int n1, n2, n3, n4, soma_quadrado;
 soma_quadrado=0;
 while(soma_quadrado<50000){
