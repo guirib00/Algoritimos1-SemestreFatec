@@ -49,8 +49,10 @@ while(cd_inicial == 1){
         }
     }
 
-    printf("Digite a quantidade de produtos comprados: ");
-    scanf("%d", &qntd_produto);
+    do{
+        printf("Digite a quantidade de produtos comprados: ");
+        scanf("%d", &qntd_produto);
+    }while(qntd_produto<=0);
 
     valor_total = preco_unitario*qntd_produto;
 
