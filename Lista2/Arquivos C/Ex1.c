@@ -20,22 +20,11 @@ while(cd_inicial==1){
         }
     }while(n1==0);
 
-
     printf("Digite o segundo numero: ");
     scanf("%d", &n2);
 
-    while(n2==n1){
-        printf("Digite o segundo numero novamente, ele precisa ser diferente do primeiro: ");
-        scanf("%d", &n2);
-    }
-
     printf("Digite o terceiro numero: ");
     scanf("%d", &n3);
-
-    while(n3==n1 || n3==n2){
-        printf("Digite o terceiro numero novamente, ele precisa ser diferente dos outros: ");
-        scanf("%d", &n3);
-    }
 
     discriminante = (n2*n2) - 4*n1*n3;
 
