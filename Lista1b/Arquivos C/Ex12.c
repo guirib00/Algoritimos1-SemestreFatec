@@ -10,10 +10,10 @@ scanf("%f", &salario_inicial);
 if(salario_inicial < 800){
     salario_reajuste = salario_inicial + salario_inicial*0.15;
 }
-else if(salario_inicial >= 800 && salario_inicial <= 1000){
+else if(salario_inicial <= 1000){
     salario_reajuste = salario_inicial + salario_inicial*0.1;
 }
-else if(salario_inicial > 1000){
+else{
     salario_reajuste = salario_inicial + salario_inicial*0.05;
 }
 printf("\nSalario inicial: R$%.2f \nSalario com reajuste: R$%.2f", salario_inicial, salario_reajuste);
