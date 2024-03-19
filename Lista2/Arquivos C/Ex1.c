@@ -14,10 +14,8 @@ while(cd_inicial==1){
         printf("\n\nDigite o primeiro numero: ");
         scanf("%d", &n1);
 
-        if(n1==0){
-            printf("\nDigite um numero valido para o primeiro numero: ");
-            scanf("%d", &n1);
-        }
+        if(n1==0)
+            printf("O numero nao pode ser igual a 0");
     }while(n1==0);
 
     printf("Digite o segundo numero: ");
