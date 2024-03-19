@@ -3,9 +3,10 @@
 void main(){
 float salario_inicial, salario_reajuste;
 
+do{
 printf("Digite o salario do funcionario: ");
 scanf("%f", &salario_inicial);
-
+}while(salario_inicial<=0);
 if(salario_inicial < 800){
     salario_reajuste = salario_inicial + salario_inicial*0.15;
 }
