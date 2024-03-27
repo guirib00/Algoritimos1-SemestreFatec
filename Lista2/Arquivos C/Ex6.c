@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    float h_degrau, h_total;
-    int qntd_degraus, cd_inicial;
+    float h_degrau, h_total, qntd_degraus;
+    int cd_inicial, resto;
     char medida_degrau[15], medida_subida[15];
 
 
@@ -26,7 +27,7 @@ while(cd_inicial==1){
         }
     }while (strcmp(medida_degrau, "metros") != 0 && strcmp(medida_degrau, "centimetros") !=0 );
 
-
+    system("cls");
     printf("\nDigite a altura do degrau: ");
     scanf("%f", &h_degrau);
 
@@ -40,7 +41,7 @@ while(cd_inicial==1){
         }
     }while(strcmp(medida_subida, "metros") != 0 && strcmp(medida_subida, "centimetros" ) != 0);
 
-
+    system("cls");
     printf("\nDigite a altura que deseja subir: ");
     scanf("%f", &h_total);
 
@@ -52,7 +53,11 @@ while(cd_inicial==1){
 
     qntd_degraus = h_total/h_degrau;
 
-    printf("\nVoce subira %d degraus para chegar ate essa altura\n", qntd_degraus);
+    if(fmod(h_total, h_degrau)>0){
+        qntd_degraus++;
+    }
+
+    printf("\nVoce subira %.0f degraus para chegar ate essa altura\n", qntd_degraus);
 
 
     system("pause");
