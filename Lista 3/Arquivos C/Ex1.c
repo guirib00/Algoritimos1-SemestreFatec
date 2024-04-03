@@ -77,7 +77,7 @@ void sequencia1(int i, int k, int sequencia)
             printf("%d, ", sequencia);
         else
             printf("%d\n", sequencia);
-        sequencia = sequencia+3;
+        sequencia += 3;
     }
 }
 
@@ -91,6 +91,6 @@ void sequencia2(int i, int k, int sequencia)
             printf("1/%d, ", sequencia);
         else
             printf("1/%d\n\n", sequencia);
-        sequencia = sequencia+4;
+        sequencia += 4;
     }
 }
